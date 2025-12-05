@@ -1,0 +1,864 @@
+{
+    "acceleratedPlans": {
+        "flagVersion": 5,
+        "trackEvents": false,
+        "value": {
+            "linodePlans": true,
+            "lkePlans": true
+        },
+        "variation": 0,
+        "version": 435
+    },
+    "aclp": {
+        "flagVersion": 9,
+        "trackEvents": false,
+        "value": {
+            "beta": false,
+            "bypassAccountCapabilities": true,
+            "enabled": true,
+            "showWidgetDimensionFilters": false
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "aclpAlertServiceTypeConfig": {
+        "flagVersion": 5,
+        "trackEvents": false,
+        "value": [
+            {
+                "maxResourceSelectionCount": 100,
+                "serviceType": "dbaas"
+            }
+        ],
+        "variation": 0,
+        "version": 435
+    },
+    "aclpAlerting": {
+        "flagVersion": 24,
+        "trackEvents": false,
+        "value": {
+            "accountAlertLimit": 100,
+            "accountMetricLimit": 100,
+            "alertDefinitions": true,
+            "beta": true,
+            "editDisabledStatuses": [
+                "failed",
+                "in progress",
+                "provisioning",
+                "enabling",
+                "disabling"
+            ],
+            "notificationChannels": false,
+            "recentActivity": false
+        },
+        "variation": 4,
+        "version": 435
+    },
+    "aclpBetaServices": {
+        "flagVersion": 16,
+        "trackEvents": false,
+        "value": {
+            "dbaas": {
+                "alerts": true,
+                "metrics": true
+            },
+            "firewall": {
+                "alerts": true,
+                "metrics": true
+            },
+            "linode": {
+                "alerts": true,
+                "metrics": true
+            },
+            "nodebalancer": {
+                "alerts": true,
+                "metrics": true
+            }
+        },
+        "variation": 2,
+        "version": 435
+    },
+    "aclpIntegration": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "aclpLogs": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": {
+            "beta": true,
+            "enabled": true
+        },
+        "variation": 0,
+        "version": 435
+    },
+    "aclpReadEndpoint": {
+        "flagVersion": 15,
+        "trackEvents": false,
+        "value": "https://monitor-api.linode.com/v2beta/monitor/services/",
+        "variation": 0,
+        "version": 435
+    },
+    "aclpResourceTypeMap": {
+        "flagVersion": 37,
+        "trackEvents": false,
+        "value": [
+            {
+                "dimensionKey": "LINODE_ID",
+                "maxResourceSelections": 10,
+                "serviceType": "linode",
+                "supportedRegionIds": "us-central"
+            },
+            {
+                "dimensionKey": "cluster_id",
+                "maxResourceSelections": 10,
+                "serviceType": "dbaas"
+            },
+            {
+                "dimensionKey": "nodebalancer",
+                "maxResourceSelections": 10,
+                "serviceType": "nodebalancer"
+            },
+            {
+                "dimensionKey": "firewall",
+                "maxResourceSelections": 10,
+                "serviceType": "firewall"
+            },
+            {
+                "dimensionKey": "objectstorage",
+                "maxResourceSelections": 10,
+                "serviceType": "objectstorage"
+            },
+            {
+                "dimensionKey": "blockstorage",
+                "maxResourceSelections": 10,
+                "serviceType": "blockstorage"
+            },
+            {
+                "dimensionKey": "lke",
+                "maxResourceSelections": 10,
+                "serviceType": "lke"
+            }
+        ],
+        "variation": 1,
+        "version": 435
+    },
+    "aclpServices": {
+        "flagVersion": 17,
+        "trackEvents": false,
+        "value": {
+            "blockstorage": {
+                "alerts": {
+                    "beta": true,
+                    "enabled": true
+                },
+                "metrics": {
+                    "beta": false,
+                    "enabled": true
+                }
+            },
+            "dbaas": {
+                "alerts": {
+                    "beta": true,
+                    "enabled": true
+                },
+                "metrics": {
+                    "beta": false,
+                    "enabled": true
+                }
+            },
+            "firewall": {
+                "alerts": {
+                    "beta": true,
+                    "enabled": true
+                },
+                "metrics": {
+                    "beta": false,
+                    "enabled": true
+                }
+            },
+            "linode": {
+                "alerts": {
+                    "beta": true,
+                    "enabled": true
+                },
+                "metrics": {
+                    "beta": false,
+                    "enabled": true
+                }
+            },
+            "lke": {
+                "alerts": {
+                    "beta": false,
+                    "enabled": false
+                },
+                "metrics": {
+                    "beta": false,
+                    "enabled": true
+                }
+            },
+            "nodebalancer": {
+                "alerts": {
+                    "beta": true,
+                    "enabled": true
+                },
+                "metrics": {
+                    "beta": false,
+                    "enabled": true
+                }
+            },
+            "objectstorage": {
+                "alerts": {
+                    "beta": true,
+                    "enabled": true
+                },
+                "metrics": {
+                    "beta": false,
+                    "enabled": true
+                }
+            }
+        },
+        "variation": 3,
+        "version": 435
+    },
+    "aglb": {
+        "flagVersion": 4,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "aglbFullCreateFlow": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "apiMaintenance": {
+        "flagVersion": 98,
+        "trackEvents": false,
+        "value": {
+            "maintenances": [
+                {
+                    "body": "The Linode Cloud Manager, API, and CLI will be offline for scheduled maintenance between 03:00 UTC and 05:00 UTC on November 12, 2025. During this window, running Linodes and related services will not be disrupted, but account management access and Support tickets will be unavailable.",
+                    "id": "78kk0nksrnlc",
+                    "title": "Maintenance for Cloud Manager, API, and CLI"
+                }
+            ]
+        },
+        "variation": 6,
+        "version": 435
+    },
+    "apicliDxToolsAdditions": {
+        "flagVersion": 7,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "apl": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "aplGeneralAvailability": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "aplLkeE": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "blockStorageEncryption": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "blockStorageVolumeLimit": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "cloudManagerDesignUpdatesBanner": {
+        "flagVersion": 9,
+        "trackEvents": false,
+        "value": {
+            "enabled": false,
+            "key": "design-tokens-2-25-2025",
+            "link": "https://techdocs.akamai.com/cloud-computing/changelog/feb-25-2025-cloud-manager-updates"
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "cloudNat": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": {
+            "beta": false,
+            "enabled": false,
+            "ga": false,
+            "la": false
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "cloudView2": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "databaseAdvancedConfig": {
+        "flagVersion": 6,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "databasePgBouncer": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "databasePremium": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "databaseResize": {
+        "flagVersion": 5,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "databaseRestrictPlanResize": {
+        "flagVersion": 3,
+        "prerequisites": [
+            "databasePremium"
+        ],
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "databaseVpc": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "databaseVpcBeta": {
+        "flagVersion": 3,
+        "prerequisites": [
+            "databaseVpc"
+        ],
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "databases": {
+        "flagVersion": 8,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "dbaasV2": {
+        "flagVersion": 5,
+        "trackEvents": false,
+        "value": {
+            "beta": false,
+            "enabled": true
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "dbaasV2MonitorMetrics": {
+        "flagVersion": 4,
+        "trackEvents": false,
+        "value": {
+            "beta": true,
+            "enabled": true
+        },
+        "variation": 0,
+        "version": 435
+    },
+    "dcGetWell": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "disableLargestGbPlans": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "firewallRulesetsPrefixlists": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "fwRulesetsPrefixLists": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": {
+            "beta": false,
+            "enabled": false,
+            "ga": false,
+            "la": false
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "gecko": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "gecko2": {
+        "flagVersion": 10,
+        "trackEvents": false,
+        "value": {
+            "enabled": true,
+            "ga": true,
+            "la": true
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "generationalPlans": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "generationalPlansv2": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": {
+            "allowedPlans": [],
+            "enabled": false
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "gpuv2": {
+        "flagVersion": 10,
+        "trackEvents": false,
+        "value": {
+            "egressBanner": false,
+            "planDivider": true,
+            "transferBanner": true
+        },
+        "variation": 4,
+        "version": 435
+    },
+    "iam": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": {
+            "beta": true,
+            "enabled": true
+        },
+        "variation": 0,
+        "version": 435
+    },
+    "iamDelegation": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": {
+            "enabled": false
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "iamRbacPrimaryNavChanges": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "ipv6Sharing": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "kubernetesBlackwellPlans": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "limitsEvolution": {
+        "flagVersion": 8,
+        "trackEvents": false,
+        "value": {
+            "enabled": true,
+            "requestForIncreaseDisabledForAll": false,
+            "requestForIncreaseDisabledForInternalAccountsOnly": true
+        },
+        "variation": 3,
+        "version": 435
+    },
+    "linodeCloneFirewall": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "linodeDiskEncryption": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "linodeInterfaces": {
+        "flagVersion": 8,
+        "trackEvents": false,
+        "value": {
+            "beta": true,
+            "enabled": true,
+            "interface_history": true
+        },
+        "variation": 2,
+        "version": 435
+    },
+    "lkeEnterprise2": {
+        "flagVersion": 9,
+        "trackEvents": false,
+        "value": {
+            "enabled": true,
+            "ga": false,
+            "la": true,
+            "phase2Mtc": {
+                "byoVPC": true,
+                "dualStack": true
+            },
+            "postLa": true
+        },
+        "variation": 6,
+        "version": 435
+    },
+    "longview": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "main-content-banner": {
+        "flagVersion": 37,
+        "trackEvents": false,
+        "value": {},
+        "variation": 1,
+        "version": 435
+    },
+    "marketplaceAppOverrides": {
+        "flagVersion": 23,
+        "trackEvents": false,
+        "value": [],
+        "variation": 0,
+        "version": 435
+    },
+    "metadata": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "mtc": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": {
+            "enabled": false,
+            "supportedRegions": [
+                "no-osl-1",
+                "us-iad",
+                "us-iad-2"
+            ]
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "mtc2025": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "networkLoadBalancer": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "nodebalancerIpv6": {
+        "flagVersion": 4,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "nodebalancerVpc": {
+        "flagVersion": 5,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "obj-multi-cluster": {
+        "flagVersion": 6,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "objSummaryPage": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "objectStorageGen2": {
+        "flagVersion": 5,
+        "trackEvents": false,
+        "value": {
+            "beta": true,
+            "enabled": true
+        },
+        "variation": 0,
+        "version": 435
+    },
+    "privateImageSharing": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "product-information-banners": {
+        "flagVersion": 62,
+        "trackEvents": false,
+        "value": [],
+        "variation": 1,
+        "version": 435
+    },
+    "promos": {
+        "flagVersion": 2,
+        "trackEvents": false,
+        "value": false,
+        "variation": 1,
+        "version": 435
+    },
+    "promotional-offers": {
+        "flagVersion": 4,
+        "trackEvents": false,
+        "value": [],
+        "variation": 1,
+        "version": 435
+    },
+    "referralBannerText": {
+        "flagVersion": 4,
+        "trackEvents": false,
+        "value": {
+            "link": {
+                "text": "here.",
+                "url": "https://www.linode.com/promotional-policy/"
+            },
+            "text": "We’re updating our customer referral program on July 1, 2021. Afterwards, referred customers will receive a $100, 60-day credit. Once that referral bills $25 of services, you will receive a $25 non-expiring credit. Learn more about eligibility"
+        },
+        "variation": 0,
+        "version": 435
+    },
+    "secureVmCopy": {
+        "flagVersion": 9,
+        "trackEvents": false,
+        "value": {
+            "bannerLabel": "AKAMAI INTERNAL",
+            "firewallAuthorizationLabel": "I am authorized to create a Linode without a Cloud Firewall",
+            "firewallAuthorizationWarning": "All Akamai accounts must apply an InfoSec-compliant firewall to all their Linodes.",
+            "firewallDetails": {
+                "link": {
+                    "text": "Aloha page.",
+                    "url": "https://ac-aloha.akamai.com/home/ls/how-the-akamai-cloud-firewall-template-works"
+                },
+                "text": "All Akamai accounts must apply an InfoSec-compliant firewall to all their Linodes. Linodes used in Akamai's Demo & Learning (non-production) accounts must have a Cloud Firewall that includes:\n\n- A Default inbound policy set to 'Drop'\n- Inbound traffic accepted only from specified IP Sources (All IPv4/IPv6 or 0.0.0.0/0 Sources is not allowed)\n- Inbound requests accepted from all ICMP sources\n\nFor more information on the Akamai Cloud Firewall Template, visit this "
+            },
+            "generateActionText": "Generate Compliant Firewall",
+            "generateDocsLink": "https://www.linode.com/docs/products/networking/cloud-firewall/guides/apply-to-service/",
+            "generatePrompt": {
+                "link": {
+                    "text": "Aloha page.",
+                    "url": "https://ac-aloha.akamai.com/home/ls/how-the-akamai-cloud-firewall-template-works"
+                },
+                "text": "A compliant firewall is required for all Linodes created for and used by Akamai. Use the button to generate an InfoSec-compliant firewall. The generated firewall is for Linodes used in Akamai's Demo & Learning (non-production) accounts. Production Linodes must be secured according to system design patterns approved by InfoSec.\n\nYou can generate this firewall multiple times. The firewall's version number automatically increments.\n\nFor more information on the Akamai Cloud Firewall Template, visit this "
+            },
+            "generateSuccess": {
+                "link": {
+                    "text": "Aloha page.",
+                    "url": "https://ac-aloha.akamai.com/home/ls/how-the-akamai-cloud-firewall-template-works"
+                },
+                "text": "You can edit this firewall, but all changes must be InfoSec compliant. This firewall can also be deleted when it's no longer required.\n\nFor more information, visit this"
+            },
+            "linodeCreate": {
+                "text": "All Akamai accounts must apply an InfoSec-compliant firewall to all their Linodes."
+            }
+        },
+        "variation": 0,
+        "version": 435
+    },
+    "selfServeBetas": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "soldOutChips": {
+        "flagVersion": 6,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "tax-banner": {
+        "flagVersion": 25,
+        "trackEvents": false,
+        "value": {
+            "country_tax": {
+                "tax_id": "3000 1606 0612",
+                "tax_name": "Australia ATO ARN"
+            },
+            "date": "1 October 2019",
+            "provincial_tax_ids": {},
+            "tax_name": "gst"
+        },
+        "variation": 0,
+        "version": 435
+    },
+    "tax-collection-banner": {
+        "flagVersion": 30,
+        "trackEvents": false,
+        "value": null,
+        "variation": null,
+        "version": 435
+    },
+    "taxId": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": {
+            "beta": false,
+            "enabled": true
+        },
+        "variation": 1,
+        "version": 435
+    },
+    "taxes": {
+        "flagVersion": 32,
+        "trackEvents": false,
+        "value": {
+            "country_tax": {
+                "tax_id": "3000 2470 8487",
+                "tax_name": "Australia ATO ARN"
+            },
+            "provincial_tax_ids": {}
+        },
+        "variation": 0,
+        "version": 435
+    },
+    "tpaProviders": {
+        "flagVersion": 16,
+        "trackEvents": false,
+        "value": [
+            {
+                "displayName": "Google",
+                "href": "https://www.google.com",
+                "icon": "GoogleIcon",
+                "name": "google"
+            },
+            {
+                "displayName": "GitHub",
+                "href": "https://www.github.com",
+                "icon": "GitHubIcon",
+                "name": "github"
+            }
+        ],
+        "variation": 0,
+        "version": 435
+    },
+    "udp": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "vmHostMaintenance": {
+        "flagVersion": 8,
+        "trackEvents": false,
+        "value": {
+            "beta": false,
+            "enabled": true,
+            "new": true
+        },
+        "variation": 3,
+        "version": 435
+    },
+    "volumeSummaryPage": {
+        "flagVersion": 4,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    },
+    "vpcIpv6": {
+        "flagVersion": 3,
+        "trackEvents": false,
+        "value": true,
+        "variation": 0,
+        "version": 435
+    }
+}   

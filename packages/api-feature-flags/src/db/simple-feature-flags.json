@@ -1,0 +1,30 @@
+{
+    "a-boolean-flag": {
+        "description": "Test a boolean flag",
+        "enabled": false
+    },
+    "a-number-flag": {
+        "description": "Test a number flag",
+        "enabled": false,
+        "value": 42
+    },
+    "a-string-flag": {
+        "description": "Test a string flag",
+        "enabled": false,
+        "value": "A string value"
+    },
+    "a-json-flag": {
+        "description": "Test a JSON flag",
+        "enabled": false,
+        "value": {
+            "foo": "value1",
+            "bar": 2,
+            "isBaz": true,
+            "quxes": [
+                1,
+                2,
+                3
+            ]
+        }
+    }
+}
