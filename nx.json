@@ -13,5 +13,13 @@
       "dependsOn": ["^build"]
     }
   },
-  "projects": {}
+  "projects": {
+    "api-feature-flags": {
+      "tags": []
+    },
+    "ui-feature-flags": {
+      "implicitDependencies": ["api-feature-flags"],
+      "tags": []
+    }
+  }
 }
