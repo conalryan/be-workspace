@@ -7,7 +7,7 @@ export class FeatureFlagService {
    */
   async getAllFlags(): Promise<FeatureFlag[]> {
     const query = `
-      SELECT id, flag_key, description, enabled, flag_data, created_at, updated_at
+      SELECT id, flag_key, description, enabled, flag_data, version, created_at, updated_at
       FROM feature_flags
       ORDER BY flag_key
     `;
@@ -20,7 +20,7 @@ export class FeatureFlagService {
    */
   async getFlagByKey(flagKey: string): Promise<FeatureFlag | null> {
     const query = `
-      SELECT id, flag_key, description, enabled, flag_data, created_at, updated_at
+      SELECT id, flag_key, description, enabled, flag_data, version, created_at, updated_at
       FROM feature_flags
       WHERE flag_key = $1
     `;
@@ -33,7 +33,7 @@ export class FeatureFlagService {
    */
   async getEnabledFlags(): Promise<FeatureFlag[]> {
     const query = `
-      SELECT id, flag_key, description, enabled, flag_data, created_at, updated_at
+      SELECT id, flag_key, description, enabled, flag_data, version, created_at, updated_at
       FROM feature_flags
       WHERE enabled = true
       ORDER BY flag_key
@@ -49,7 +49,7 @@ export class FeatureFlagService {
     const query = `
       INSERT INTO feature_flags (flag_key, description, enabled, flag_data)
       VALUES ($1, $2, $3, $4)
-      RETURNING id, flag_key, description, enabled, flag_data, created_at, updated_at
+      RETURNING id, flag_key, description, enabled, flag_data, version, created_at, updated_at
     `;
     const values = [
       data.flag_key,
@@ -93,7 +93,7 @@ export class FeatureFlagService {
       UPDATE feature_flags
       SET ${updates.join(', ')}
       WHERE flag_key = $${paramIndex}
-      RETURNING id, flag_key, description, enabled, flag_data, created_at, updated_at
+      RETURNING id, flag_key, description, enabled, flag_data, version, created_at, updated_at
     `;
 
     const result = await pool.query(query, values);
@@ -121,7 +121,7 @@ export class FeatureFlagService {
       UPDATE feature_flags
       SET enabled = NOT enabled
       WHERE flag_key = $1
-      RETURNING id, flag_key, description, enabled, flag_data, created_at, updated_at
+      RETURNING id, flag_key, description, enabled, flag_data, version, created_at, updated_at
     `;
     const result = await pool.query(query, [flagKey]);
     return result.rows[0] || null;
@@ -132,7 +132,7 @@ export class FeatureFlagService {
    */
   async searchFlags(searchTerm: string): Promise<FeatureFlag[]> {
     const query = `
-      SELECT id, flag_key, description, enabled, flag_data, created_at, updated_at
+      SELECT id, flag_key, description, enabled, flag_data, version, created_at, updated_at
       FROM feature_flags
       WHERE flag_key ILIKE $1 OR description ILIKE $1
       ORDER BY flag_key

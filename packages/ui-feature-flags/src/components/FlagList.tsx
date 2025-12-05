@@ -73,6 +73,9 @@ export const FlagList: React.FC<FlagListProps> = ({ flags, onEdit, onToggle, onD
               ID: {flag.id}
             </span>
             <span style={styles.metadataItem}>
+              Version: {flag.version}
+            </span>
+            <span style={styles.metadataItem}>
               Created: {new Date(flag.created_at).toLocaleString()}
             </span>
             <span style={styles.metadataItem}>

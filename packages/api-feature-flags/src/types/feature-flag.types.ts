@@ -4,6 +4,7 @@ export interface FeatureFlag {
   description: string;
   enabled: boolean;
   flag_data: Record<string, any>;
+  version: number;
   created_at: Date;
   updated_at: Date;
 }
